@@ -1,4 +1,4 @@
-# temp
+# 登录验证
 
 > A Vue.js project
 
@@ -25,6 +25,17 @@ npm run e2e
 
 # run all tests
 npm test
+```
+## Explain
+
+``` bash
+# 登录验证
+
+# 默认显示首页
+
+# 访问非首页跳转至登录页
+
+# 登录成功后跳转至上次路由
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
