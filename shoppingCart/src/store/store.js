@@ -21,9 +21,6 @@ const store = new Vuex.Store({
     newAuthor(state, payload) { // 你可以向 store.commit 传入额外的参数，即 mutation 的 载荷（payload[应该是一个对象]）
       state.author = payload.msg;
     },
-    // newAuthor(state, { msg }) { // 对象的解构赋值
-    //   state.author = msg;
-    // },
     INCREMENT(state) {
       state.count++;
     },
@@ -41,7 +38,7 @@ const store = new Vuex.Store({
     increment(context) {
       context.commit('INCREMENT');
     },
-    decrement({commit}) { // 对象的解构赋值（因为函数的参数是一个对象）
+    decrement({commit}) { // 对象的结构赋值（因为函数的参数是一个对象）
       commit('DECREMENT');
     }
   }
