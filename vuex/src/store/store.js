@@ -26,9 +26,11 @@ const store = new Vuex.Store({
     // },
     INCREMENT(state) {
       state.count++;
+      console.log(state.count);
     },
     DECREMENT(state) {
       state.count--;
+      console.log(state.count);
     }
   },
   // 有时候我们需要从 store 中的 state 中派生出一种状态，例如对列表进行过滤并计算

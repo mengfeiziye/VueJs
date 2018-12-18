@@ -6,11 +6,13 @@
       <button @click="add">+</button>
       <button @click="decrement">-</button>
     </div>
+    <page-four-inner></page-four-inner>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
 import { mapActions } from 'vuex';
+import pageFourInner from '@/components/pageFourInner/pageFourInner.vue';
 export default {
   data() {
     return {
@@ -18,7 +20,7 @@ export default {
     };
   },
   components: {
-
+    pageFourInner
   },
   computed: {
     count() {
